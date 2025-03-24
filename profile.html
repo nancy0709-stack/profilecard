@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+            width: 320px;
+            transition: transform 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover .profile-img {
+            transform: rotate(10deg);
+        }
+
+        h2 {
+            margin-top: 15px;
+            color: #fff;
+            font-size: 22px;
+        }
+
+        p {
+            color: #ddd;
+            margin: 8px 0;
+            font-size: 14px;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            margin: 0 8px;
+            font-size: 22px;
+            display: inline-block;
+            color: white;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: #f1c40f;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 18px;
+            background: #f1c40f;
+            color: black;
+            font-weight: bold;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background: #ffdd57;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img class="profile-img" src="download.jpeg" alt="Profile Picture">
+        <h2>Alice Doe</h2>
+        <p>Software Engineer | Web Developer</p>
+        <p>"Building the future, one line of code at a time!"</p>
+        
+        <div class="social-icons">
+            <a href="#" title="LinkedIn">🔗</a>
+            <a href="#" title="GitHub">🐙</a>
+            <a href="#" title="Twitter">🐦</a>
+        </div>
+
+        <a href="#" class="btn">Contact Me</a>
+    </div>
+
+</body>
+</html>
